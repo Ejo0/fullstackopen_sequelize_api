@@ -1,0 +1,6 @@
+PUT http://localhost:3001/api/users/ada@ada.a
+Content-Type: application/json
+
+{
+  "name": "Uusi nimi"
+}
