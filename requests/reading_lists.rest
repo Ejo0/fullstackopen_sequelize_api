@@ -6,3 +6,12 @@ Content-Type: application/json
   "userId": 1,
   "blogId": 2
 }
+
+### Add same blog to Foo's reading list
+POST http://localhost:3001/api/readinglists
+Content-Type: application/json
+
+{
+  "userId": 2,
+  "blogId": 2
+}

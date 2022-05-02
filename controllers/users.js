@@ -33,6 +33,13 @@ router.get('/:id', async (req, res) => {
         as: 'readings',
         through: {
           attributes: []
+        },
+        include: {
+          model: ReadingList,
+          attributes: ['id', 'isRead'],
+          where: {
+            userId: req.params.id
+          }
         }
       }
     ]
