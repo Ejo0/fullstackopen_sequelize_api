@@ -23,12 +23,27 @@ Blog.init({
   likes: {
     type: DataTypes.INTEGER,
     defaultValue: 0
+  },
+  year: {
+    type: DataTypes.INTEGER,
+    defaultValue: false,
+    allowNull: false,
+    validate: {
+      min: {
+        args: 1991,
+        msg: "Min year is 1991"
+      },
+      isMaxCurrentYear(value) {
+        if (value > new Date().getFullYear()) {
+          throw new Error('Max year is current year')
+        }
+      }
+    }
   }
 }, {
   sequelize,
   underscored: true,
-  modelName: 'blog',
-  timestamps: false
+  modelName: 'blog'
 })
 
 module.exports = Blog

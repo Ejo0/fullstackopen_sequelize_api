@@ -1,0 +1,15 @@
+### Valid like
+PUT http://localhost:3001/api/blogs/2
+Content-Type: application/json
+
+{
+  "likes": 3
+}
+
+### Unvalid like
+PUT http://localhost:3001/api/blogs/2
+Content-Type: application/json
+
+{
+  "likes": "two"
+}

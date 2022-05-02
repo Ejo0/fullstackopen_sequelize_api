@@ -1,1 +1,5 @@
+### Get all blogs (order: likes)
 GET http://localhost:3001/api/blogs
+
+### Bet with search
+GET http://localhost:3001/api/blogs?search=bob

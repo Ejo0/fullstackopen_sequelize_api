@@ -1,0 +1,45 @@
+### Create without token
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+
+{
+  "title": "No token",
+  "author": "Bob",
+  "url": "google.com",
+  "year": 2000
+}
+
+### Create with false token
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: bearer nnn
+
+{
+  "title": "False token",
+  "author": "Bob",
+  "url": "google.com",
+  "year": 2000
+}
+
+### Create without title
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkYUBhZGEuY29tIiwiaWQiOjEsImlhdCI6MTY1MTQ4NTU2NH0.fmxU20YN6Mp0Vm0j-vGZsKRDm1mcFFKMN4AJxiYubow
+
+{
+  "author": "Bob Blogger",
+  "url": "google.com",
+  "year": 2020
+}
+
+### Create with unvalid year
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkYUBhZGEuY29tIiwiaWQiOjEsImlhdCI6MTY1MTQ4NTU2NH0.fmxU20YN6Mp0Vm0j-vGZsKRDm1mcFFKMN4AJxiYubow
+
+{
+  "title": "A blog from future",
+  "author": "Bob Blogger",
+  "url": "google.com",
+  "year": 2035
+}

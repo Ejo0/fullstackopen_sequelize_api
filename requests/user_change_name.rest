@@ -1,6 +1,6 @@
-PUT http://localhost:3001/api/users/ada@ada.a
+PUT http://localhost:3001/api/users/ada@ada.com
 Content-Type: application/json
 
 {
-  "name": "Uusi nimi"
+  "name": "Ada Lovelace"
 }

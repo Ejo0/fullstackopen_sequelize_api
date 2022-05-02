@@ -1,0 +1,43 @@
+### Create new user Ada
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+  "username": "ada@ada.com",
+  "name": "Ada L",
+  "password": "salainen"
+}
+
+### Login with Ada
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+  "username": "ada@ada.com",
+  "password": "salainen"
+}
+
+### Create post with Ada
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkYUBhZGEuY29tIiwiaWQiOjEsImlhdCI6MTY1MTQ4NTU2NH0.fmxU20YN6Mp0Vm0j-vGZsKRDm1mcFFKMN4AJxiYubow
+
+{
+  "title": "The first blog added",
+  "author": "Bob Blogger",
+  "url": "google.com",
+  "year": 2020
+}
+
+### Another blog with Ada
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkYUBhZGEuY29tIiwiaWQiOjEsImlhdCI6MTY1MTQ4NTU2NH0.fmxU20YN6Mp0Vm0j-vGZsKRDm1mcFFKMN4AJxiYubow
+
+{
+  "title": "The second blog",
+  "author": "Bob the Blogger",
+  "url": "google.com",
+  "year": 2010
+}
+
