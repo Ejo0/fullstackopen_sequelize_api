@@ -1,0 +1,8 @@
+### Add a blog to Ada's reading list
+POST http://localhost:3001/api/readinglists
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "blogId": 2
+}
