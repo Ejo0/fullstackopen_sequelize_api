@@ -3,3 +3,6 @@ GET http://localhost:3001/api/users
 
 ### Get one user (Ada)
 GET http://localhost:3001/api/users/1
+
+### Get one user with only read blogs in readinglist
+GET http://localhost:3001/api/users/1?read=true
