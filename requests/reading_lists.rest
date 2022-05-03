@@ -15,3 +15,21 @@ Content-Type: application/json
   "userId": 2,
   "blogId": 2
 }
+
+### Mark first one as read
+PUT http://localhost:3001/api/readinglists/1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkYUBhZGEuY29tIiwiaWQiOjEsImlhdCI6MTY1MTQ4NTU2NH0.fmxU20YN6Mp0Vm0j-vGZsKRDm1mcFFKMN4AJxiYubow
+
+{
+  "read": true
+}
+
+### Try with wrong token
+PUT http://localhost:3001/api/readinglists/1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZvb0BiYXIuY29tIiwiaWQiOjIsImlhdCI6MTY1MTQ4NjIzMn0.93GVL5TIx_KOLpHMKUj52-5U9T16OICZJEZZs7FAUcI
+
+{
+  "read": false
+}
