@@ -20,7 +20,7 @@ Content-Type: application/json
 ### Create post with Ada
 POST http://localhost:3001/api/blogs
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkYUBhZGEuY29tIiwiaWQiOjEsImlhdCI6MTY1MTQ4NTU2NH0.fmxU20YN6Mp0Vm0j-vGZsKRDm1mcFFKMN4AJxiYubow
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkYUBhZGEuY29tIiwiaWQiOjEsImlhdCI6MTY1MTY0OTQ1MH0.mYUJpL4Vmqi2BNa-F6lTi7uu6XON46-QAs6HqbZnva4
 
 {
   "title": "The first blog added",
@@ -32,7 +32,7 @@ Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkY
 ### Another blog with Ada
 POST http://localhost:3001/api/blogs
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkYUBhZGEuY29tIiwiaWQiOjEsImlhdCI6MTY1MTQ4NTU2NH0.fmxU20YN6Mp0Vm0j-vGZsKRDm1mcFFKMN4AJxiYubow
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkYUBhZGEuY29tIiwiaWQiOjEsImlhdCI6MTY1MTY0OTQ1MH0.mYUJpL4Vmqi2BNa-F6lTi7uu6XON46-QAs6HqbZnva4
 
 {
   "title": "The second blog",
